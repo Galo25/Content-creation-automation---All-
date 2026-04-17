@@ -12,8 +12,11 @@ The service account must have Editor access to the sheet.
 import argparse
 import json
 import os
+import ssl
 import sys
 
+import httplib2
+import google_auth_httplib2
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -39,7 +42,10 @@ def get_service(key_path: str):
     creds = service_account.Credentials.from_service_account_file(
         key_path, scopes=SCOPES
     )
-    return build("sheets", "v4", credentials=creds)
+    # Disable SSL cert verification for environments with self-signed CA chains
+    http = httplib2.Http(disable_ssl_certificate_validation=True)
+    authorized_http = google_auth_httplib2.AuthorizedHttp(creds, http=http)
+    return build("sheets", "v4", http=authorized_http)
 
 
 def append_post(service, post: dict) -> dict:
