@@ -21,7 +21,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 SPREADSHEET_ID = "1Lm_BCv3CUOtJqTh2gedXIqjt96k4jgTFksvMOOeLGTA"
-SHEET_NAME = "Sheet1"
+SHEET_NAME = "FinTel Content Engine — Posts Master List"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 # Column order matches the header row exactly:
