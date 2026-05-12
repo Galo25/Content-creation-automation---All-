@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#f0f7ff"/>
+
+  <!-- TOP BAND -->
+  <rect x="0" y="0" width="600" height="52" fill="#1565C0"/>
+  <text x="22" y="31" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="white" opacity="0.75" letter-spacing="2">ACA MARKETPLACE — OPEN ENROLLMENT</text>
+  <text x="578" y="31" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#FDD835" text-anchor="end" letter-spacing="1">2026 Plans</text>
+
+  <!-- HEADLINE BLOCK -->
+  <rect x="0" y="52" width="600" height="118" fill="white"/>
+  <line x1="0" y1="170" x2="600" y2="170" stroke="#E3F0FF" stroke-width="3"/>
+  <text x="22" y="96" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#0D3C7A">Health Coverage From</text>
+  <text x="22" y="134" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#1565C0">$0/Month — Check Your State</text>
+  <text x="22" y="158" font-family="Arial, sans-serif" font-size="13.5" fill="#555">Earn under <tspan font-weight="700" fill="#0D3C7A">$62,600/yr?</tspan> You may qualify for free or subsidized coverage.</text>
+
+  <!-- STATE TABLE AREA -->
+  <rect x="0" y="170" width="600" height="248" fill="white"/>
+
+  <!-- Table header -->
+  <text x="22" y="196" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" fill="#999" letter-spacing="1.5">LOWEST MONTHLY PREMIUM BY STATE — BRONZE PLAN</text>
+
+  <!-- Row 1: New Hampshire — $0 (highlighted green) -->
+  <rect x="22" y="204" width="556" height="36" rx="8" fill="#E8F5E9"/>
+  <rect x="22" y="204" width="556" height="36" rx="8" fill="none" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="38" y="227" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0D3C7A">🏆 New Hampshire</text>
+  <text x="290" y="227" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Lowest Bronze</text>
+  <rect x="478" y="208" width="84" height="28" rx="14" fill="#E8F5E9"/>
+  <rect x="478" y="208" width="84" height="28" rx="14" fill="none" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="520" y="227" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#1B5E20" text-anchor="middle">$0 / mo</text>
+
+  <!-- Row 2: Maryland — $0 (highlighted green) -->
+  <rect x="22" y="248" width="556" height="36" rx="8" fill="#E8F5E9"/>
+  <rect x="22" y="248" width="556" height="36" rx="8" fill="none" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="38" y="271" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0D3C7A">Maryland</text>
+  <text x="290" y="271" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Lowest Bronze</text>
+  <rect x="478" y="252" width="84" height="28" rx="14" fill="#E8F5E9"/>
+  <rect x="478" y="252" width="84" height="28" rx="14" fill="none" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="520" y="271" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#1B5E20" text-anchor="middle">$0 / mo</text>
+
+  <!-- Row 3: Georgia -->
+  <rect x="22" y="292" width="556" height="36" rx="8" fill="#f4f9ff"/>
+  <rect x="22" y="292" width="556" height="36" rx="8" fill="none" stroke="#d9eaff" stroke-width="1"/>
+  <text x="38" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0D3C7A">Georgia</text>
+  <text x="290" y="315" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Lowest Bronze</text>
+  <text x="570" y="315" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#333" text-anchor="end">~$23 / mo</text>
+
+  <!-- Row 4: Texas -->
+  <rect x="22" y="336" width="556" height="36" rx="8" fill="#f4f9ff"/>
+  <rect x="22" y="336" width="556" height="36" rx="8" fill="none" stroke="#d9eaff" stroke-width="1"/>
+  <text x="38" y="359" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0D3C7A">Texas</text>
+  <text x="290" y="359" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Lowest Bronze</text>
+  <text x="570" y="359" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#333" text-anchor="end">~$31 / mo</text>
+
+  <!-- Row 5: Florida -->
+  <rect x="22" y="380" width="556" height="36" rx="8" fill="#f4f9ff"/>
+  <rect x="22" y="380" width="556" height="36" rx="8" fill="none" stroke="#d9eaff" stroke-width="1"/>
+  <text x="38" y="403" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0D3C7A">Florida</text>
+  <text x="290" y="403" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Lowest Bronze</text>
+  <text x="570" y="403" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#333" text-anchor="end">~$38 / mo</text>
+
+  <!-- Note -->
+  <text x="300" y="432" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">Prices after subsidy for ~$25,000/yr income · Varies by county</text>
+
+  <!-- QUALIFIER BAR -->
+  <rect x="0" y="444" width="600" height="50" fill="#1565C0"/>
+  <text x="22" y="466" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white">💡 Tax credits cover</text>
+  <text x="178" y="466" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#FDD835">up to 100% of premiums</text>
+  <text x="380" y="466" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white">for qualifying incomes.</text>
+  <text x="22" y="485" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.8">Enter your zip code to see your exact price in 60 seconds.</text>
+
+  <!-- CTA FOOTER -->
+  <rect x="0" y="494" width="600" height="106" fill="#0D3C7A"/>
+  <text x="22" y="526" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">Find Your State's Lowest Plan</text>
+  <text x="22" y="547" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.7">No obligation · Results in under 60 seconds</text>
+
+  <!-- CTA Button -->
+  <rect x="422" y="508" width="152" height="48" rx="24" fill="#FDD835"/>
+  <text x="498" y="538" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#0D3C7A" text-anchor="middle" letter-spacing="0.5">SEE PLANS →</text>
+</svg>

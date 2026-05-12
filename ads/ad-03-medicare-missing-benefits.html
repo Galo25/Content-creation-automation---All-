@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=600">
+<title>Ad 03 — Your Medicare Is Missing 3 Things</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 600px;
+    height: 600px;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+  }
+
+  .ad-wrapper {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #FDF6EE;
+    overflow: hidden;
+  }
+
+  /* ── TOP HEADER ── */
+  .header {
+    background: #C0392B;
+    padding: 13px 28px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .header-badge {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+
+  /* ── HEADLINE BLOCK ── */
+  .headline-block {
+    background: #ffffff;
+    padding: 20px 28px 16px;
+    border-bottom: 2px solid #F5EAE0;
+  }
+
+  .alert-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #FFF3E0;
+    border: 1px solid #FFCC80;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #E65100;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+
+  .headline {
+    font-size: 33px;
+    font-weight: 900;
+    color: #2C1810;
+    line-height: 1.12;
+    margin-bottom: 7px;
+  }
+
+  .headline span {
+    color: #C0392B;
+  }
+
+  .sub-copy {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.45;
+  }
+
+  .sub-copy strong {
+    color: #2C1810;
+    font-weight: 700;
+  }
+
+  /* ── BENEFITS GRID ── */
+  .benefits-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    padding: 16px 20px 14px;
+    background: #FDF6EE;
+  }
+
+  .benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 14px 10px;
+    border-radius: 14px;
+    background: #ffffff;
+    margin: 0 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    position: relative;
+    border: 1.5px solid #F0E0D0;
+  }
+
+  .benefit-number {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #C0392B;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefit-icon {
+    font-size: 38px;
+    margin-bottom: 8px;
+    margin-top: 6px;
+  }
+
+  .benefit-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #2C1810;
+    margin-bottom: 5px;
+  }
+
+  .benefit-detail {
+    font-size: 11.5px;
+    color: #777;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .benefit-value {
+    background: #E8F5E9;
+    border: 1px solid #A5D6A7;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #1B5E20;
+  }
+
+  /* ── ZERO COST BANNER ── */
+  .zero-banner {
+    background: #2C1810;
+    padding: 11px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .zero-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .zero-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #27AE60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: white;
+    font-weight: 900;
+    flex-shrink: 0;
+  }
+
+  .zero-text {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2px;
+  }
+
+  .zero-divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(255,255,255,0.2);
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    background: #C0392B;
+    padding: 14px 28px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .cta-text {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.35;
+  }
+
+  .cta-text span {
+    color: #FFD700;
+    font-size: 15px;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .cta-btn {
+    background: #ffffff;
+    color: #C0392B;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  }
+
+  .cta-btn:hover {
+    background: #FFF9C4;
+  }
+</style>
+</head>
+<body>
+<div class="ad-wrapper">
+
+  <div class="header">
+    <div class="header-label">Free Medicare Advantage — 2026 Enrollment</div>
+    <div class="header-badge">$0 PREMIUM</div>
+  </div>
+
+  <div class="headline-block">
+    <div class="alert-chip">
+      ⚠ Most seniors don't know this
+    </div>
+    <div class="headline">Your Medicare<br>Is Missing <span>3 Things</span></div>
+    <div class="sub-copy">
+      Original Medicare <strong>doesn't cover</strong> dental, vision, or grocery benefits.
+      2026 Advantage plans add all three — <strong>at no extra cost</strong>.
+    </div>
+  </div>
+
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-number">1</div>
+      <div class="benefit-icon">🦷</div>
+      <div class="benefit-title">Free Dental</div>
+      <div class="benefit-detail">Cleanings, x-rays, fillings &amp; more</div>
+      <div class="benefit-value">Included</div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-number">2</div>
+      <div class="benefit-icon">👁</div>
+      <div class="benefit-title">Free Vision</div>
+      <div class="benefit-detail">Eye exams + eyewear allowance</div>
+      <div class="benefit-value">Included</div>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-number">3</div>
+      <div class="benefit-icon">🛒</div>
+      <div class="benefit-title">Grocery Card</div>
+      <div class="benefit-detail">Healthy food allowance each month</div>
+      <div class="benefit-value">Up to $150/mo</div>
+    </div>
+  </div>
+
+  <div class="zero-banner">
+    <div class="zero-item">
+      <div class="zero-check">✓</div>
+      <div class="zero-text">$0 Monthly Premium</div>
+    </div>
+    <div class="zero-divider"></div>
+    <div class="zero-item">
+      <div class="zero-check">✓</div>
+      <div class="zero-text">$0 Deductibles</div>
+    </div>
+    <div class="zero-divider"></div>
+    <div class="zero-item">
+      <div class="zero-check">✓</div>
+      <div class="zero-text">No Medical Exam</div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-text">
+      <span>Add These 3 Benefits Free</span>
+      Switch takes 5 minutes · Keeps your doctors
+    </div>
+    <div class="cta-btn">Compare Plans →</div>
+  </div>
+
+</div>
+</body>
+</html>

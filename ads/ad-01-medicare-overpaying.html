@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=600">
+<title>Ad 01 — Are You Overpaying for Medicare?</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 600px;
+    height: 600px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    overflow: hidden;
+    background: #0B1F3A;
+  }
+
+  .ad-wrapper {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    background: linear-gradient(145deg, #0B1F3A 0%, #132C52 60%, #0E2444 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 40px 32px;
+    overflow: hidden;
+  }
+
+  /* Decorative circle accent top-right */
+  .ad-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.08);
+    pointer-events: none;
+  }
+  .ad-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.05);
+    pointer-events: none;
+  }
+
+  /* TOP SECTION */
+  .top-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+
+  .eyebrow {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #D4AF37;
+    background: rgba(212, 175, 55, 0.12);
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+  }
+
+  .year-badge {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  /* MIDDLE SECTION */
+  .mid-section {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .question-line {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+  }
+
+  .headline {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    line-height: 1.13;
+    margin-bottom: 6px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .headline span {
+    color: #D4AF37;
+  }
+
+  /* Price strike-through graphic */
+  .price-compare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin: 22px 0 20px;
+    position: relative;
+  }
+
+  .price-old {
+    font-family: 'Arial', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.35);
+    position: relative;
+    text-decoration: line-through;
+    text-decoration-color: #e53e3e;
+    text-decoration-thickness: 3px;
+  }
+
+  .price-arrow {
+    font-size: 26px;
+    color: #D4AF37;
+    opacity: 0.9;
+  }
+
+  .price-new {
+    font-family: 'Arial', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    color: #D4AF37;
+    text-shadow: 0 0 20px rgba(212,175,55,0.4);
+    letter-spacing: -1px;
+  }
+
+  .price-new sub {
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: bottom;
+    color: rgba(212,175,55,0.8);
+  }
+
+  .sub-copy {
+    font-family: 'Arial', sans-serif;
+    font-size: 14.5px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.55;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .sub-copy strong {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  /* Benefit pills */
+  .benefit-pills {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 5px 13px;
+    letter-spacing: 0.3px;
+  }
+
+  /* CTA SECTION */
+  .cta-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4AF37 0%, #F0C93A 50%, #C9A227 100%);
+    color: #0B1F3A;
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 17px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 6px 24px rgba(212,175,55,0.45), 0 2px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    width: 360px;
+    text-align: center;
+  }
+
+  .disclaimer {
+    font-family: 'Arial', sans-serif;
+    font-size: 10.5px;
+    color: rgba(255,255,255,0.35);
+    text-align: center;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+<div class="ad-wrapper">
+
+  <div class="top-bar">
+    <div class="eyebrow">Medicare Update</div>
+    <div class="year-badge">2026 PLANS</div>
+  </div>
+
+  <div class="mid-section">
+    <div class="question-line">Are you still paying a monthly premium?</div>
+    <div class="headline">
+      You May Qualify for<br>
+      <span>$0/Month</span> Medicare
+    </div>
+
+    <div class="price-compare">
+      <div class="price-old">$202<span style="font-size:22px">/mo</span></div>
+      <div class="price-arrow">→</div>
+      <div class="price-new">$0<sub>/mo</sub></div>
+    </div>
+
+    <div class="sub-copy">
+      <strong>98% of seniors</strong> now have access to a $0-premium<br>
+      Medicare Advantage plan in 2026. Most include dental,<br>
+      vision &amp; hearing at <strong>no extra cost</strong>.
+    </div>
+
+    <div class="benefit-pills">
+      <span class="pill">✓ Dental</span>
+      <span class="pill">✓ Vision</span>
+      <span class="pill">✓ Hearing</span>
+      <span class="pill">✓ Prescriptions</span>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-btn">Check My Eligibility →</div>
+    <div class="disclaimer">
+      Medicare Advantage plans vary by location. Not all plans available in all areas.<br>
+      Results may vary. Licensed insurance agents available.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
