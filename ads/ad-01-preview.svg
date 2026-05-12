@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B1F3A"/>
+      <stop offset="60%" style="stop-color:#132C52"/>
+      <stop offset="100%" style="stop-color:#0E2444"/>
+    </linearGradient>
+    <linearGradient id="btnGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37"/>
+      <stop offset="50%" style="stop-color:#F0C93A"/>
+      <stop offset="100%" style="stop-color:#C9A227"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bg1)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="520" cy="60" r="140" fill="#D4AF37" opacity="0.06"/>
+  <circle cx="80" cy="540" r="110" fill="#D4AF37" opacity="0.04"/>
+
+  <!-- TOP BAR -->
+  <!-- Eyebrow pill -->
+  <rect x="30" y="28" width="160" height="30" rx="15" fill="#D4AF37" opacity="0.15"/>
+  <rect x="30" y="28" width="160" height="30" rx="15" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.35"/>
+  <text x="110" y="48" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#D4AF37" text-anchor="middle" letter-spacing="2">MEDICARE UPDATE</text>
+  <!-- Year -->
+  <text x="570" y="48" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="white" opacity="0.7" text-anchor="end">2026 PLANS</text>
+
+  <!-- QUESTION LINE -->
+  <text x="300" y="120" font-family="Arial, sans-serif" font-size="15" fill="white" opacity="0.65" text-anchor="middle">Are you still paying a monthly premium?</text>
+
+  <!-- MAIN HEADLINE -->
+  <text x="300" y="168" font-family="Georgia, serif" font-size="40" font-weight="700" fill="white" text-anchor="middle">You May Qualify for</text>
+  <text x="300" y="215" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#D4AF37" text-anchor="middle">$0/Month Medicare</text>
+
+  <!-- PRICE COMPARISON -->
+  <!-- Old price with strikethrough -->
+  <text x="178" y="280" font-family="Arial, sans-serif" font-size="38" font-weight="800" fill="white" opacity="0.35" text-anchor="middle">$202/mo</text>
+  <line x1="108" y1="268" x2="248" y2="268" stroke="#e53e3e" stroke-width="3"/>
+  <!-- Arrow -->
+  <text x="300" y="280" font-family="Arial, sans-serif" font-size="26" fill="#D4AF37" text-anchor="middle">→</text>
+  <!-- New price -->
+  <text x="420" y="292" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#D4AF37" text-anchor="middle">$0</text>
+  <text x="455" y="292" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#D4AF37" opacity="0.8">/mo</text>
+
+  <!-- BODY COPY -->
+  <text x="300" y="338" font-family="Arial, sans-serif" font-size="14" fill="white" opacity="0.8" text-anchor="middle">98% of seniors now have access to a $0-premium</text>
+  <text x="300" y="358" font-family="Arial, sans-serif" font-size="14" fill="white" opacity="0.8" text-anchor="middle">Medicare Advantage plan in 2026. Most include</text>
+  <text x="300" y="378" font-family="Arial, sans-serif" font-size="14" fill="white" opacity="0.8" text-anchor="middle">dental, vision &amp; hearing at no extra cost.</text>
+
+  <!-- BENEFIT PILLS -->
+  <!-- Pill 1: Dental -->
+  <rect x="46" y="400" width="100" height="28" rx="14" fill="white" opacity="0.1"/>
+  <rect x="46" y="400" width="100" height="28" rx="14" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  <text x="96" y="419" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="white" opacity="0.9" text-anchor="middle">✓ Dental</text>
+  <!-- Pill 2: Vision -->
+  <rect x="158" y="400" width="100" height="28" rx="14" fill="white" opacity="0.1"/>
+  <rect x="158" y="400" width="100" height="28" rx="14" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  <text x="208" y="419" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="white" opacity="0.9" text-anchor="middle">✓ Vision</text>
+  <!-- Pill 3: Hearing -->
+  <rect x="270" y="400" width="110" height="28" rx="14" fill="white" opacity="0.1"/>
+  <rect x="270" y="400" width="110" height="28" rx="14" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  <text x="325" y="419" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="white" opacity="0.9" text-anchor="middle">✓ Hearing</text>
+  <!-- Pill 4: Prescriptions -->
+  <rect x="392" y="400" width="150" height="28" rx="14" fill="white" opacity="0.1"/>
+  <rect x="392" y="400" width="150" height="28" rx="14" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  <text x="467" y="419" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="white" opacity="0.9" text-anchor="middle">✓ Prescriptions</text>
+
+  <!-- CTA BUTTON -->
+  <rect x="120" y="452" width="360" height="54" rx="27" fill="url(#btnGold)"/>
+  <text x="300" y="485" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#0B1F3A" text-anchor="middle" letter-spacing="0.5">CHECK MY ELIGIBILITY →</text>
+
+  <!-- DISCLAIMER -->
+  <text x="300" y="530" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.35" text-anchor="middle">Medicare Advantage plans vary by location. Not all plans available in all areas.</text>
+  <text x="300" y="548" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.35" text-anchor="middle">Results may vary. Licensed insurance agents available.</text>
+</svg>

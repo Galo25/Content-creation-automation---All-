@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#FDF6EE"/>
+
+  <!-- HEADER -->
+  <rect x="0" y="0" width="600" height="48" fill="#C0392B"/>
+  <text x="22" y="29" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="white" opacity="0.85" letter-spacing="2">FREE MEDICARE ADVANTAGE — 2026 ENROLLMENT</text>
+  <rect x="480" y="10" width="100" height="28" rx="14" fill="white" opacity="0.15"/>
+  <rect x="480" y="10" width="100" height="28" rx="14" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+  <text x="530" y="29" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="white" text-anchor="middle" letter-spacing="1">$0 PREMIUM</text>
+
+  <!-- HEADLINE BLOCK -->
+  <rect x="0" y="48" width="600" height="128" fill="white"/>
+  <line x1="0" y1="176" x2="600" y2="176" stroke="#F5EAE0" stroke-width="2"/>
+
+  <!-- Alert chip -->
+  <rect x="22" y="62" width="196" height="26" rx="13" fill="#FFF3E0"/>
+  <rect x="22" y="62" width="196" height="26" rx="13" fill="none" stroke="#FFCC80" stroke-width="1"/>
+  <text x="115" y="80" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#E65100" text-anchor="middle">⚠  Most seniors don't know this</text>
+
+  <!-- Headline -->
+  <text x="22" y="116" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#2C1810">Your Medicare Is</text>
+  <text x="22" y="155" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#2C1810">Missing <tspan fill="#C0392B">3 Things</tspan></text>
+
+  <!-- Sub copy -->
+  <text x="340" y="106" font-family="Arial, sans-serif" font-size="12.5" fill="#666">Original Medicare</text>
+  <text x="340" y="123" font-family="Arial, sans-serif" font-size="12.5" fill="#666"><tspan font-weight="700" fill="#2C1810">doesn't cover</tspan> dental,</text>
+  <text x="340" y="140" font-family="Arial, sans-serif" font-size="12.5" fill="#666">vision, or grocery benefits.</text>
+  <text x="340" y="157" font-family="Arial, sans-serif" font-size="12.5" fill="#666">2026 plans add all three</text>
+  <text x="340" y="173" font-family="Arial, sans-serif" font-size="12.5" fill="#2C1810" font-weight="700">at no extra cost.</text>
+
+  <!-- BENEFIT CARDS BACKGROUND -->
+  <rect x="0" y="176" width="600" height="220" fill="#FDF6EE"/>
+
+  <!-- Card 1: Dental -->
+  <rect x="18" y="192" width="172" height="188" rx="14" fill="white"/>
+  <rect x="18" y="192" width="172" height="188" rx="14" fill="none" stroke="#F0E0D0" stroke-width="1.5"/>
+  <!-- Number badge -->
+  <circle cx="104" cy="188" r="13" fill="#C0392B"/>
+  <text x="104" y="193" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="white" text-anchor="middle">1</text>
+  <!-- Icon -->
+  <text x="104" y="254" font-family="Arial, sans-serif" font-size="44" text-anchor="middle">🦷</text>
+  <!-- Title -->
+  <text x="104" y="280" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#2C1810" text-anchor="middle">Free Dental</text>
+  <!-- Detail -->
+  <text x="104" y="298" font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">Cleanings, x-rays,</text>
+  <text x="104" y="313" font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">fillings &amp; more</text>
+  <!-- Value badge -->
+  <rect x="54" y="325" width="100" height="24" rx="12" fill="#E8F5E9"/>
+  <rect x="54" y="325" width="100" height="24" rx="12" fill="none" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="104" y="342" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#1B5E20" text-anchor="middle">Included</text>
+
+  <!-- Card 2: Vision -->
+  <rect x="214" y="192" width="172" height="188" rx="14" fill="white"/>
+  <rect x="214" y="192" width="172" height="188" rx="14" fill="none" stroke="#F0E0D0" stroke-width="1.5"/>
+  <circle cx="300" cy="188" r="13" fill="#C0392B"/>
+  <text x="300" y="193" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="white" text-anchor="middle">2</text>
+  <text x="300" y="254" font-family="Arial, sans-serif" font-size="44" text-anchor="middle">👁</text>
+  <text x="300" y="280" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#2C1810" text-anchor="middle">Free Vision</text>
+  <text x="300" y="298" font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">Eye exams +</text>
+  <text x="300" y="313" font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">eyewear allowance</text>
+  <rect x="250" y="325" width="100" height="24" rx="12" fill="#E8F5E9"/>
+  <rect x="250" y="325" width="100" height="24" rx="12" fill="none" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="300" y="342" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#1B5E20" text-anchor="middle">Included</text>
+
+  <!-- Card 3: Grocery Card -->
+  <rect x="410" y="192" width="172" height="188" rx="14" fill="white"/>
+  <rect x="410" y="192" width="172" height="188" rx="14" fill="none" stroke="#F0E0D0" stroke-width="1.5"/>
+  <circle cx="496" cy="188" r="13" fill="#C0392B"/>
+  <text x="496" y="193" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="white" text-anchor="middle">3</text>
+  <text x="496" y="254" font-family="Arial, sans-serif" font-size="44" text-anchor="middle">🛒</text>
+  <text x="496" y="280" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#2C1810" text-anchor="middle">Grocery Card</text>
+  <text x="496" y="298" font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">Healthy food</text>
+  <text x="496" y="313" font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">allowance monthly</text>
+  <rect x="428" y="322" width="136" height="24" rx="12" fill="#E8F5E9"/>
+  <rect x="428" y="322" width="136" height="24" rx="12" fill="none" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="496" y="339" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#1B5E20" text-anchor="middle">Up to $150/mo</text>
+
+  <!-- ZERO COST BANNER -->
+  <rect x="0" y="396" width="600" height="52" fill="#2C1810"/>
+  <!-- Item 1 -->
+  <circle cx="60" cy="422" r="11" fill="#27AE60"/>
+  <text x="60" y="427" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="white" text-anchor="middle">✓</text>
+  <text x="80" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="white">$0 Monthly Premium</text>
+  <!-- Divider -->
+  <line x1="222" y1="406" x2="222" y2="438" stroke="white" stroke-width="1" opacity="0.2"/>
+  <!-- Item 2 -->
+  <circle cx="248" cy="422" r="11" fill="#27AE60"/>
+  <text x="248" y="427" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="white" text-anchor="middle">✓</text>
+  <text x="268" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="white">$0 Deductibles</text>
+  <!-- Divider -->
+  <line x1="400" y1="406" x2="400" y2="438" stroke="white" stroke-width="1" opacity="0.2"/>
+  <!-- Item 3 -->
+  <circle cx="424" cy="422" r="11" fill="#27AE60"/>
+  <text x="424" y="427" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="white" text-anchor="middle">✓</text>
+  <text x="444" y="427" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="white">No Medical Exam</text>
+
+  <!-- CTA FOOTER -->
+  <rect x="0" y="448" width="600" height="152" fill="#C0392B"/>
+  <text x="28" y="490" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#FFD700">Add These 3 Benefits Free</text>
+  <text x="28" y="514" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" opacity="0.9">Switch takes 5 minutes · Keeps your doctors</text>
+
+  <!-- CTA Button -->
+  <rect x="350" y="464" width="222" height="52" rx="26" fill="white"/>
+  <text x="461" y="496" font-family="Arial, sans-serif" font-size="15" font-weight="900" fill="#C0392B" text-anchor="middle" letter-spacing="0.5">COMPARE PLANS →</text>
+</svg>
