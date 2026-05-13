@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=600">
+<title>Ad 01 — Photo Variant — $0 Medicare</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 600px; height: 600px; overflow: hidden; font-family: 'Arial', sans-serif; }
+
+  .ad {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background: #0B1F3A;
+    overflow: hidden;
+  }
+
+  /* ── LEFT: PHOTO PANEL ── */
+  .photo-panel {
+    width: 285px;
+    height: 600px;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .photo-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  /* Gradient fade right edge into navy */
+  .photo-panel::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 80px; height: 100%;
+    background: linear-gradient(to right, transparent, #0B1F3A);
+  }
+
+  /* Top dark overlay for eyebrow text */
+  .photo-panel::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 120px;
+    background: linear-gradient(to top, rgba(11,31,58,0.85), transparent);
+    z-index: 1;
+  }
+
+  /* ── RIGHT: COPY PANEL ── */
+  .copy-panel {
+    flex: 1;
+    padding: 28px 22px 22px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Decorative gold circle */
+  .copy-panel::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    background: rgba(212,175,55,0.07);
+    pointer-events: none;
+  }
+
+  .top-section { position: relative; z-index: 2; }
+
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D4AF37;
+    background: rgba(212,175,55,0.1);
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 20px;
+    padding: 4px 10px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  .headline {
+    font-size: 26px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  .headline span { color: #D4AF37; }
+
+  .price-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 0 12px;
+  }
+
+  .price-old {
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.3);
+    text-decoration: line-through;
+    text-decoration-color: #e53e3e;
+    text-decoration-thickness: 2px;
+  }
+
+  .price-arrow { color: #D4AF37; font-size: 16px; }
+
+  .price-new {
+    font-size: 38px;
+    font-weight: 900;
+    color: #D4AF37;
+    letter-spacing: -1px;
+    text-shadow: 0 0 16px rgba(212,175,55,0.4);
+  }
+
+  .price-new sub {
+    font-size: 15px;
+    font-weight: 600;
+    vertical-align: bottom;
+    color: rgba(212,175,55,0.75);
+  }
+
+  .body-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,0.68);
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .body-copy strong { color: #fff; }
+
+  /* Benefit list */
+  .benefits { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .check {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: rgba(212,175,55,0.2);
+    border: 1px solid rgba(212,175,55,0.5);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    color: #D4AF37;
+    flex-shrink: 0;
+  }
+
+  /* CTA */
+  .bottom-section { position: relative; z-index: 2; }
+
+  .cta-btn {
+    display: block;
+    background: linear-gradient(135deg, #D4AF37, #F0C93A, #C9A227);
+    color: #0B1F3A;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 40px;
+    box-shadow: 0 4px 18px rgba(212,175,55,0.4);
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+
+  .disclaimer {
+    font-size: 9px;
+    color: rgba(255,255,255,0.3);
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  /* Bottom badge on photo */
+  .photo-badge {
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+    z-index: 2;
+    background: rgba(11,31,58,0.85);
+    border: 1px solid rgba(212,175,55,0.4);
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+
+  .photo-badge-text {
+    font-size: 10px;
+    font-weight: 700;
+    color: #D4AF37;
+    letter-spacing: 0.5px;
+  }
+
+  .photo-badge-sub {
+    font-size: 9px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- LEFT: PHOTO -->
+  <div class="photo-panel">
+    <img
+      src="https://images.pexels.com/photos/7659873/pexels-photo-7659873.jpeg?auto=compress&cs=tinysrgb&w=600"
+      alt="Doctor consulting senior patient"
+      onerror="this.style.background='linear-gradient(180deg,#1a3a5c,#0B1F3A)';this.style.display='block'"
+    >
+    <div class="photo-badge">
+      <div class="photo-badge-text">Talk to a Licensed Agent</div>
+      <div class="photo-badge-sub">Free · No obligation</div>
+    </div>
+  </div>
+
+  <!-- RIGHT: COPY -->
+  <div class="copy-panel">
+    <div class="top-section">
+      <div class="eyebrow">Medicare Update 2026</div>
+      <div class="headline">
+        You May Qualify<br>for <span>$0/Month</span><br>Medicare
+      </div>
+
+      <div class="price-row">
+        <div class="price-old">$202/mo</div>
+        <div class="price-arrow">→</div>
+        <div class="price-new">$0<sub>/mo</sub></div>
+      </div>
+
+      <div class="body-copy">
+        <strong>98% of seniors</strong> now have access to a $0-premium plan. Most include:
+      </div>
+
+      <div class="benefits">
+        <div class="benefit-item"><div class="check">✓</div>Free Dental</div>
+        <div class="benefit-item"><div class="check">✓</div>Free Vision</div>
+        <div class="benefit-item"><div class="check">✓</div>Free Hearing</div>
+        <div class="benefit-item"><div class="check">✓</div>Rx Coverage</div>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="cta-btn">Check My Eligibility →</div>
+      <div class="disclaimer">
+        Plans vary by location. Licensed agents available.<br>
+        Not affiliated with any government agency.
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
