@@ -36,27 +36,32 @@ def convert_file(html_path: Path, output_path: Path, width: int, height: int) ->
         page.goto(f'file://{html_path.resolve()}')
         page.wait_for_load_state('networkidle', timeout=10000)
 
-        # Inject html-to-image UMD bundle
-        page.evaluate(html_to_image_js)
-
-        # Capture the root element with html-to-image
-        data_url = page.evaluate(f"""
-            () => {{
-                const node = document.querySelector('body > *:first-child') || document.body;
-                return htmlToImage.toPng(node, {{
-                    width: {width},
-                    height: {height},
-                    pixelRatio: 2,
-                    skipAutoScale: false,
-                }});
-            }}
-        """)
-
-        browser.close()
-
-    # data_url is "data:image/png;base64,..."
-    import base64
-    img_data = base64.b64decode(data_url.split(',', 1)[1])
+        # Inject html-to-image UMD bundle and attempt capture
+        try:
+            page.evaluate(html_to_image_js)
+            data_url = page.evaluate(f"""
+                () => {{
+                    const node = document.querySelector('body > *:first-child') || document.body;
+                    return htmlToImage.toPng(node, {{
+                        width: {width},
+                        height: {height},
+                        pixelRatio: 2,
+                        skipAutoScale: false,
+                        fetchRequestInit: {{ mode: 'no-cors' }},
+                    }});
+                }}
+            """)
+            browser.close()
+            import base64
+            img_data = base64.b64decode(data_url.split(',', 1)[1])
+        except Exception:
+            # Fallback: use Playwright native screenshot (handles external images)
+            print('  (html-to-image fallback → Playwright screenshot)')
+            img_data = page.screenshot(
+                clip={'x': 0, 'y': 0, 'width': width, 'height': height},
+                scale='device',
+            )
+            browser.close()
     output_path.write_bytes(img_data)
     size_kb = len(img_data) // 1024
     print(f'  ✓  {output_path.name}  ({size_kb} KB)')
