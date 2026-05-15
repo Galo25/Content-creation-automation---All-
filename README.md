@@ -11,6 +11,12 @@ Target: Medicare seniors 65+ · Expected CTR: 0.8–1.4%
 
 ![Ad 01 – You May Qualify for $0/Month Medicare](ads/ad-01-preview.svg)
 
+## Ad 01 — Photo Variant (Doctor + Patient Split Panel)
+**"You May Qualify for $0/Month Medicare"**  
+Split layout with doctor/patient imagery · Same targeting & CTA
+
+![Ad 01 Photo Variant – Doctor consulting senior patient](ads/ad-01-photo-preview.svg)
+
 ---
 
 ## Ad 02 — Geographic Price Table
